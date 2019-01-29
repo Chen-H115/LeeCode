@@ -5,8 +5,8 @@ class Solution:
         :rtype: int
         """
         for i in range(len(triangle)-2, -1, -1):
-            for idx in range(len(triangle[i])-1, -1, -1):
-                a = triangle[i+1][idx + 1]
-                b = triangle[i+1][idx]
-                triangle[i][idx] = triangle[i][idx] + min(a, b)
+            for e in range(len(triangle[i])-1, -1, -1):
+                a = triangle[i+1][e + 1]
+                b = triangle[i+1][e]
+                triangle[i][e] = triangle[i][e] + min(a, b)
         return triangle[0][0]
