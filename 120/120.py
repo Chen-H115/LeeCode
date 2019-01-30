@@ -1,3 +1,4 @@
+#RunTime: 40 ms
 class Solution:
     def minimumTotal(self, triangle):
         """

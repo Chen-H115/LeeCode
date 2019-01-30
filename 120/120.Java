@@ -1,3 +1,4 @@
+//RunTime: 4 ms
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
          int M = triangle.size();
