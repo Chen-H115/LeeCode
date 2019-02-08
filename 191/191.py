@@ -1,4 +1,4 @@
-#Rumtime: 20 ms
+#RumTime: 20 ms
 class Solution(object):
     def hammingWeight(self, n):
         """
