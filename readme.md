@@ -1,1 +1,1 @@
-#Recode for Leetcode
+# Recode for Leetcode
