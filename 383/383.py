@@ -1,4 +1,4 @@
-#S1 Runtime: 44 ms
+#Runtime: 44 ms
 class Solution:
     def canConstruct(self, ransomNote, magazine):
         """
@@ -12,7 +12,7 @@ class Solution:
                     return False
             return True
         return len(set(ransomNote) - set(magazine)) is 0 and helper()
-#S2 Runtime: 52 ms
+#Runtime: 52 ms
 class Solution:
     def canConstruct(self, ransomNote, magazine):
         """
@@ -36,7 +36,7 @@ class Solution:
             if len(ransomNote) == 0:
                 break
         return True
-#S3 Runtime: 184 ms
+#Runtime: 184 ms
 class Solution:
     def canConstruct(self, ransomNote, magazine):
         """

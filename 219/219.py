@@ -21,3 +21,18 @@ class Solution:
             if (i + k < len(nums) and helper1(i)) or (k >= len(nums) and helper2(i)):
                 return True
         return False
+
+#RunTime: 40 ms
+class Solution:
+    def containsNearbyDuplicate(self, nums: 'List[int]', k: 'int') -> 'bool':
+        if len(nums) == len(set(nums)):
+            return False
+        dis = []
+        for i in range(len(nums)):
+            if i != len(nums) - 1 -nums[::-1].index(nums[i]):
+                dis.append([kk for kk, x in enumerate(nums) if x == nums[i] ])
+        for i in range(len(dis)):
+            for j in range(1,len(dis[i])):
+                if dis[i][j] - dis[i][j-1] <= k:
+                    return True
+        return False
